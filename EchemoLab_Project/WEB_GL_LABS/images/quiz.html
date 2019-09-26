@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function k() {
+var array=[];
+var p=0;
+  if (document.getElementById('q11').checked) {
+    array[0]="Correct";
+    p++;
+  }
+  else
+  {
+    array[0]="Wrong";
+  }
+
+
+    if (document.getElementById('q23').checked) {
+      array[1]="Correct";
+      p++;
+    }
+    else
+    {
+      array[1]="Wrong";
+    }
+      if (document.getElementById('q31').checked) {
+        array[2]="Correct";
+        p++;
+      }
+      else
+      {
+        array[2]="Wrong";
+      }
+        if (document.getElementById('q44').checked) {
+          array[3]="Correct";
+          p++;
+        }
+        else
+        {
+          array[3]="Wrong";
+        }
+          if (document.getElementById('q52').checked) {
+            array[4]="Correct";
+            p++;
+          }
+          else
+          {
+            array[4]="Wrong";
+          }
+            if (document.getElementById('q63').checked) {
+              array[5]="Correct";
+                p++;
+            }
+            else
+            {
+              array[5]="Wrong";
+            }
+var result="Q1 :";
+result+=  array[0]+"<br/>";
+result+="Q2 :";
+result+=  array[1]+"<br/>"
+result+="Q3 :";
+result+=  array[2]+"<br/>"
+result+="Q4 :";
+result+=  array[3]+"<br/>"
+result+="Q5 :";
+result+=  array[4]+"<br/>"
+result+="Q6 :";
+result+=  array[5]+"<br/>"
+result+="Your percentage is: "+(p/6)*100;
+document.getElementById("result").innerHTML = result;
+
+
+}
+
+
+
+</script>
+
+</head>
+
+<body>
+  <center>
+
+<h3>Q:1) What is your name</h3>
+<div>
+  <input type="radio" id="q11" name="q0" value="male">Haseeb<br>
+  <input type="radio" id="q12" name="q0" value="female"> Lateef<br>
+  <input type="radio" id="q13" name="q0" value="other"> Shumaila <br>
+  <input type="radio" id="q14" name="q0" value="other"> Nouman <br>
+</div>
+
+<h3>Q:2) What is your Father name</h3>
+<div>
+  <input type="radio" id="q21" name="q1" value="male">Haneef<br>
+  <input type="radio" id="q22" name="q1" value="female"> Jafar <br>
+  <input type="radio" id="q23" name="q1" value="other"> Zaffar <br>
+  <input type="radio" id="q24" name="q1" value="other"> Shakeel <br>
+</div>
+
+<h3>Q:3) What is your caste</h3>
+<div>
+  <input type="radio" id="q31" name="q2" value="male">Siddiqui<br>
+  <input type="radio" id="q32" name="q2" value="female"> Syed<br>
+  <input type="radio" id="q33" name="q2" value="other"> Khan <br>
+  <input type="radio" id="q34" name="q2" value="other"> jutt <br>
+</div>
+
+<h3>Q:4) What is your religion</h3>
+<div>
+  <input type="radio" id="q41" name="q3" value="male">Christian<br>
+  <input type="radio" id="q42" name="q3" value="female">Hindu<br>
+  <input type="radio" id="q43" name="q3" value="other"> Parsi <br>
+  <input type="radio" id="q44" name="q3" value="other">Islam <br>
+</div>
+
+<h3>Q:5) What is your prime ministername</h3>
+<div>
+  <input type="radio" id="q51" name="q4" value="male">Altaf Bhai<br>
+  <input type="radio" id="q52" name="q4" value="female"> Imran khan<br>
+  <input type="radio" id="q53" name="q4" value="other"> Nawaz <br>
+  <input type="radio" id="q54" name="q4" value="other"> Asif Zardari <br>
+</div>
+
+<h3>Q:6) Who is the founder of pakistan</h3>
+<div>
+  <input type="radio" id="q61" name="q5" value="male">Allama Iqbal<br>
+  <input type="radio" id="q62" name="q5" value="female"> Sir Syed Ahmed<br>
+  <input type="radio" id="q63" name="q5" value="other">Muhammad Ali Jinnah <br>
+  <input type="radio" id="q64" name="q5" value="other"> Tuuu <br>
+</div>
+
+  <input type="button" onclick="k()"  value="Submit quiz"> <br>
+
+<div id="result"> Result Would be Shown Here</div>
+<br>
+</center>
+</body>
+</html>

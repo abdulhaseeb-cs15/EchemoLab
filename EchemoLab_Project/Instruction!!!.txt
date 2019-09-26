@@ -1,0 +1,1 @@
+Practicing.php is the index page for website...!!
